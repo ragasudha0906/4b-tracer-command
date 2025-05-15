@@ -37,8 +37,12 @@ This commands includes
 
 ## Program:
 
-![image](https://github.com/user-attachments/assets/979cc3c9-8aee-4991-abe7-d6cb93428c01)
-
+```
+from scapy.all import* 
+target = ["www.google.com"] 
+result, unans = traceroute(target,maxttl=32) 
+print(result,unans)
+```
 
 ## Output:
 
